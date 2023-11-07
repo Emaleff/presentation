@@ -1,14 +1,12 @@
 <template>
   <div class="container">
-    <h1>layout</h1>
-
     <nav>
       <NuxtLink to="./"> main </NuxtLink>
       <NuxtLink to="./v-once"> v-once && v-memo </NuxtLink>
       <NuxtLink to="./nuxt-image"> NuxtImage </NuxtLink>
       <NuxtLink to="./keep-alive"> KeepAlive </NuxtLink>
       <NuxtLink to="./tanstack-query"> tanstack-query </NuxtLink>
-      <NuxtLink to="./use-fetch"> useFetch </NuxtLink>
+      <NuxtLink to="./use-fetch"> хуки в NUXT </NuxtLink>
     </nav>
 
     <div>
@@ -17,6 +15,9 @@
   </div>
 </template>
 
+<script setup lang="ts">
+const counter = useState("counter");
+</script>
 <style lang="scss">
 .container {
   max-width: 1000px;

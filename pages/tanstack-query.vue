@@ -13,6 +13,10 @@
 <script setup lang="ts">
 import { useQuery } from "@tanstack/vue-query";
 
+useHead({
+  title: "какой то тайтл2",
+});
+
 const fetcher = async () =>
   await fetch("https://jsonplaceholder.typicode.com/posts").then((response) =>
     response.json()
