@@ -5,6 +5,10 @@
     <nav>
       <NuxtLink to="./"> main </NuxtLink>
       <NuxtLink to="./v-once"> v-once && v-memo </NuxtLink>
+      <NuxtLink to="./nuxt-image"> NuxtImage </NuxtLink>
+      <NuxtLink to="./keep-alive"> KeepAlive </NuxtLink>
+      <NuxtLink to="./tanstack-query"> tanstack-query </NuxtLink>
+      <NuxtLink to="./use-fetch"> useFetch </NuxtLink>
     </nav>
 
     <div>
