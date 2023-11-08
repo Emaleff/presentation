@@ -7,6 +7,7 @@
       <NuxtLink to="./keep-alive"> KeepAlive </NuxtLink>
       <NuxtLink to="./tanstack-query"> tanstack-query </NuxtLink>
       <NuxtLink to="./use-fetch"> хуки в NUXT </NuxtLink>
+      <NuxtLink to="./nuxt-island"> NuxtIsland </NuxtLink>
     </nav>
 
     <div>
@@ -15,9 +16,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const counter = useState("counter");
-</script>
+<script setup lang="ts"></script>
 <style lang="scss">
 .container {
   max-width: 1000px;
@@ -27,5 +26,14 @@ const counter = useState("counter");
 nav {
   display: flex;
   gap: 20px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &.router-link-active {
+    color: #f00;
+  }
 }
 </style>
